@@ -8,20 +8,36 @@
 </head>
 <body>
 
-    <header class="navbar">
-        <nav class="nav-container">
-            <span class="logo">&lt;RAPHAEL SMITH /&gt;</span>
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
-                ☰
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#tech">Technologies</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section id="hero-landing" class="hero-landing">
+            <canvas id="heroCanvas"></canvas>
+                <div class="hero-content">
+                    <p class="hero-greeting">HELLO WORLD, I'M</p>
+                    <h1 class="hero-name">Raphael Smith</h1>
+                    <h2 class="hero-subtitle">Frontend Engineer</h2>
+                    <p class="hero-tagline">Building high-performance, interactive applications.</p>
+                    
+                    <a href="#about" class="scroll-down-btn" id="scrollDownBtn" aria-label="Scroll down to content">
+                        <span class="arrow-text">Click to know me!</span>
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M19 12l-7 7-7-7"/>
+                        </svg>
+                    </a>
+                </div>
+        </section>
+
+    <header class="navbar navbar-hidden" id="mainNavbar">
+    <nav class="nav-container">
+        <a href="#hero-landing" class="logo">&lt;RAPHAEL SMITH /&gt;</a>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech">Technologies</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main class="main-content">
 
@@ -170,7 +186,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Your Name. Built with Semantic HTML, CSS, and JavaScript.</p>
+        <p>&copy; 2026 Raphael Smith. Built with Semantic HTML, CSS, and JavaScript.</p>
     </footer>
 
     <script src="script.js"></script>
